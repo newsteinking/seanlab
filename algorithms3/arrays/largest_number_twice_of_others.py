@@ -26,10 +26,18 @@ nums will have a length in the range [1, 50].
 Every nums[i] will be an integer in the range [0, 99].
 '''
 
-def largest_twice(nums):
+# def largest_twice(nums):
+#         largest_index = nums.index(max(nums))
+#     for i in range(len(nums)):
+#         if i == largest_index: continue
+#         if (2 * nums[i]) > nums[largest_index]: return -1
+#
+#     return largest_index
+
+def largest_number_twice_of_others(nums):
     largest_index = nums.index(max(nums))
     for i in range(len(nums)):
         if i == largest_index: continue
-        if (2 * nums[i]) > nums[largest_index]: return -1 
+        if (2 * nums[i]) > nums[largest_index]: return -1
 
-    return largest_index 
+    return largest_index

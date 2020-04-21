@@ -31,16 +31,31 @@ Input: [1,1,1]
 Output: true
 '''
 
-def monotonic_array(A):
+# def monotonic_array(A):
+#     if len(A) == 1: return True
+#     down, up = False, False
+#
+#     for i in range(len(A) - 1):
+#         if A[i] > A[i + 1]:
+#             if up: return False
+#             down = True
+#         elif A[i] < A[i + 1]:
+#             if down: return False
+#             up = True
+#
+#     return False if up and down else True
+
+def is_monotonic(A):
     if len(A) == 1: return True
-    down, up = False, False 
+    down, up = False, False
 
     for i in range(len(A) - 1):
         if A[i] > A[i + 1]:
             if up: return False
-            down = True 
+            down = True
         elif A[i] < A[i + 1]:
-            if down: return False 
-            up = True 
+            if down: return False
+            up = True
 
-    return False if up and down else True 
+    return False if up and down else True
+

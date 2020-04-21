@@ -25,3 +25,23 @@ def longest_inc(word):
 
     return max(cache)
 
+
+def lis(A):
+    memo = {}
+    
+    def dp(prev_index, n):
+        if n == len(A):
+            return 0 
+        if prev_index in memo:
+            return memo[prev_index] 
+        
+        chose, skip = 0, 0
+        if prev_index < 0 or A[prev_index] < A[n]:
+            chose = 1 + dp(n, n + 1)
+        skip = dp(prev_index, n + 1)
+        memo[prev_index] = max(chose, skip)
+        return memo[prev_index] 
+    
+    dp(-1, 0)
+    return max(memo.values())
+            

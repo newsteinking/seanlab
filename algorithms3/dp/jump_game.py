@@ -76,3 +76,4 @@ def can_jump_v5(nums):
         for j in range(i):
             dp[i] = dp[j] and nums[j] >= i-j
     return dp[-1]
+

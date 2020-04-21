@@ -17,8 +17,15 @@ Example 3:
 Input: [1,1,1,3,3,4,3,2,4,2]
 Output: true
 '''
-
-def contains_duplicates(nums):
+# def contains_duplicates(nums):
+#     seen = set()
+#     for i in range(len(nums)):
+#         if nums[i] in seen:
+#             return True
+#         else:
+#             seen.add(nums[i])
+#     return False
+def contains_duplicate_one(nums):
     seen = set()
     for i in range(len(nums)):
         if nums[i] in seen:

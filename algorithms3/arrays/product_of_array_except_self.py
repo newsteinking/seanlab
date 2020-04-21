@@ -13,7 +13,7 @@ Could you solve it with constant space complexity? (The output array does not co
 space for the purpose of space complexity analysis.)
 '''
 
-def product_except_self(nums):
+def product_of_array_except_self(nums):
     result = [1] * len(nums)
     for i in range(len(nums) - 2, -1, -1):
         result[i] = result[i + 1] * nums[i + 1]
@@ -25,19 +25,19 @@ def product_except_self(nums):
 
     return result
     
-def product_except_self_v2(nums):
-    left = [1] * len(nums)
-    right = [1] * len(nums)
-
-    for i in range(1, len(nums)):
-        left[i] = left[i - 1] * nums[i - 1]
-
-    for i in range(len(nums) - 2, -1, -1):
-        right[i] = right[i + 1] * nums[i + 1]
-
-    output = [1] * len(nums)
-    for i in range(len(nums)):
-        output[i] = left[i] * right[i]
-
-    return output
-
+# def product_of_array_except_self_v2(nums):
+#     left = [1] * len(nums)
+#     right = [1] * len(nums)
+#
+#     for i in range(1, len(nums)):
+#         left[i] = left[i - 1] * nums[i - 1]
+#
+#     for i in range(len(nums) - 2, -1, -1):
+#         right[i] = right[i + 1] * nums[i + 1]
+#
+#     output = [1] * len(nums)
+#     for i in range(len(nums)):
+#         output[i] = left[i] * right[i]
+#
+#     return output
+#

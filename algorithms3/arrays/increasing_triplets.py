@@ -17,7 +17,7 @@ Input: [5,4,3,2,1]
 Output: false
 '''
 
-def increasing_triplet(nums):
+def increasing_triplets(nums):
     first, second = float('inf'), float('inf')
 
     for num in nums:

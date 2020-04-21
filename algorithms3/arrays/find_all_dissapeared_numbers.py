@@ -15,8 +15,7 @@ Input:
 Output:
 [5,6]
 '''
-
-def find_disappeared(nums):
+def find_all_disappeared_number(nums):
     result = []
     for i in range(len(nums)):
         index = abs(nums[i]) - 1
@@ -28,3 +27,16 @@ def find_disappeared(nums):
             result.append(i+1)
 
     return result
+
+# def find_disappeared(nums):
+#     result = []
+#     for i in range(len(nums)):
+#         index = abs(nums[i]) - 1
+#         if nums[index] > 0:
+#             nums[index] = - nums[index]
+#
+#     for i in range(len(nums)):
+#         if nums[i] > 0:
+#             result.append(i+1)
+#
+#     return result

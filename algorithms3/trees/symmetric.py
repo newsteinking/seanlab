@@ -67,5 +67,3 @@ def is_symmetric_iterative(root):
 
     return True
 
-
-

@@ -14,7 +14,7 @@ Then length of the input array is in range [1, 10,000].
 The input array may contain duplicates, so ascending order here means <=.
 '''
 
-def shortest_unsorted(nums):
+def shortest_unsorted_subarray(nums):
     if not nums: return 0
     left = 0
     while left < len(nums) - 1:

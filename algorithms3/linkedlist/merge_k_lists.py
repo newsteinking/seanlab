@@ -35,3 +35,6 @@ def merge_k_lists(lists) -> ListNode:
         if node:
             heapq.heappush(minheap, (node.val, next(counter), node))
     return head.next
+
+
+0049550016

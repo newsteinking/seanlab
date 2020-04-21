@@ -12,7 +12,7 @@ Explanation: The third maximum is 1.
 '''
 
 import heapq
-def third_max(nums):
+def third_max_number(nums):
     nums = list(set(nums))
     if len(nums) < 3: return max(nums)
     heapq._heapify_max(nums)

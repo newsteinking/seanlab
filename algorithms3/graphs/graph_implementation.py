@@ -209,7 +209,7 @@ class GraphList:
                     if vertex not in visited:
                         que.append(vertex)
                         visited.add(vertex)
-            result.append(temp)
+            result.append(sorted(temp))
         
         for vertex in self.graph:
             if vertex not in visited:

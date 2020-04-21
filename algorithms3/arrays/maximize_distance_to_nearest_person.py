@@ -24,8 +24,21 @@ If Alex sits in the last seat, the closest person is 3 seats away.
 This is the maximum distance possible, so the answer is 3.
 '''
 
-def max_dist(seats):
-    max_zeroes = 0 
+# def max_dist(seats):
+#     max_zeroes = 0
+#     current_zeroes = 0
+#
+#     for seat in seats:
+#         if seat == 0:
+#             current_zeroes += 1
+#         if seat == 1:
+#             if current_zeroes > max_zeroes:
+#                 max_zeroes = current_zeroes
+#             current_zeroes = 0
+#
+#     return max((max_zeroes + 1) // 2, seats.index(1), seats[::-1].index(1))
+def maximize_distance_to_nearest_person(seats):
+    max_zeroes = 0
     current_zeroes = 0
 
     for seat in seats:
@@ -37,3 +50,4 @@ def max_dist(seats):
             current_zeroes = 0
 
     return max((max_zeroes + 1) // 2, seats.index(1), seats[::-1].index(1))
+

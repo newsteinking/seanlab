@@ -30,3 +30,5 @@ def add_binary(a, b):
     if carry:
         result.appendleft(carry)
     return ''.join(str(x) for x in result)
+
+

@@ -116,16 +116,3 @@ def recoverBST(root):
 
 
 
-
-if __name__ == '__main__':
-    bst1 = BST()
-    bst1.root = TreeNode(1)
-    bst1.root.left = TreeNode(3)
-    bst1.root.left.right = TreeNode(2)
-    #result = bst1.inorder()
-    #print(result)
-    recoverBST(bst1.root)
-    #result = bst1.inorder()
-    print(bst1)
-
-

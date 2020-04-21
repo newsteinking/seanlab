@@ -58,6 +58,3 @@ def three_sum_v2(nums):
                 else:
                     res.add((v, -v-x, x))
         return map(list, res)
-
-if __name__ == '__main__':
-    print(three_sum([-2,0,1,1,2]))

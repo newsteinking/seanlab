@@ -16,7 +16,18 @@ Only three moves are needed (remember each move increments two elements):
 [1,2,3]  =>  [2,3,3]  =>  [3,4,3]  =>  [4,4,4]
 '''
 
-def minimum_moves(nums):
+# def minimum_moves(nums):
+#     nums.sort()
+#
+#     count = 0
+#     for i in range(len(nums)-1, -1, -1):
+#         if nums[i] == nums[0]:
+#             break
+#         count += nums[i] - nums[0]
+#
+#     return count
+
+def minimum_moves_to_equal_array(nums):
     nums.sort()
 
     count = 0
@@ -25,5 +36,4 @@ def minimum_moves(nums):
             break
         count += nums[i] - nums[0]
 
-    return count 
-
+    return count

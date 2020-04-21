@@ -47,7 +47,6 @@ def position_large_groups_v2(S):
         while right + 1 < len(S) and S[right] == S[right + 1]:
             right += 1
 
-        print(left, right)
         if right - left + 1 >= 3:
             result.append([left, right])
 

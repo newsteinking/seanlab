@@ -15,9 +15,23 @@ Explanation: The longest continuous increasing subsequence is [2], its length is
 Note: Length of the array will not exceed 10,000.
 '''
 
-def lis_continuous(nums):
+# def lis_continuous(nums):
+# #     if not nums: return 0
+# #
+# #     longest_s = current_s = 1
+# #     for i in range(len(nums) - 1):
+# #         if nums[i] < nums[i + 1]:
+# #             current_s += 1
+# #         else:
+# #             if current_s > longest_s:
+# #                 longest_s = current_s
+# #             current_s = 1
+# #
+# #     if current_s > longest_s: return current_s
+# #     return longest_s
+def longest_continuous_increasing_subsequence(nums):
     if not nums: return 0
-    
+
     longest_s = current_s = 1
     for i in range(len(nums) - 1):
         if nums[i] < nums[i + 1]:

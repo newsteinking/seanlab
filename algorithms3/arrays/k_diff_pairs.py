@@ -25,7 +25,19 @@ The length of the array won't exceed 10,000.
 All the integers in the given input belong to the range: [-1e7, 1e7].
 '''
 
-def find_pairs(nums, k):
+# def find_pairs(nums, k):
+#     seen = set()
+#     result = set()
+#     for digit in nums:
+#         if digit - k in seen:
+#             result.add((digit-k, digit))
+#         if digit + k in seen:
+#             result.add((digit, digit+k))
+#
+#         seen.add(digit)
+#
+#     return len(result)
+def k_diff_pairs(nums, k):
     seen = set()
     result = set()
     for digit in nums:

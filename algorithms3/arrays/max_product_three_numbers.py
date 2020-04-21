@@ -14,7 +14,7 @@ Input: [1,2,3,4]
 Output: 24
 '''
 
-def max_product(nums) -> int:
+def max_product_three_numbers(nums) -> int:
     min1 = min2 = float('inf')
     max1 = max2 = max3 = float('-inf')
     

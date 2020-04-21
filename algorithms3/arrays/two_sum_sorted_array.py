@@ -17,7 +17,7 @@ Output: [1,2]
 Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 '''
 
-def two_sum_sorted(numbers, target):
+def two_sum_sorted_array(numbers, target):
     left, right = 0, len(numbers)-1
 
     while left < right:

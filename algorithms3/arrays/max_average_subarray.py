@@ -16,7 +16,7 @@ Note:
 Elements of the given array will be in the range [-10,000, 10,000].
 '''
 
-def max_average(nums, k):
+def max_average_subarray(nums, k):
     max_sum = 0
     for i in range(k):
         max_sum += nums[i]
